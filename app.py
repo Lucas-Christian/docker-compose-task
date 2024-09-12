@@ -16,4 +16,4 @@ def get_hit_count():
 @app.route('/')
 def hello():
     count = get_hit_count()
-    return 'Corinthians! I have been seen {} times.\n'.format(count)
+    return 'EU AMO LEAGUE OF LEGENDS :)! I have been seen {} times.\n'.format(count)
