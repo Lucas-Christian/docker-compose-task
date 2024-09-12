@@ -1,24 +1,12 @@
-version: '3.3'
-
 services:
-  backend:
-    build: ./atv-silvio-backend
-    container_name: backend
+  web:
+    build: .
     ports:
-      - "8000:8000"
-    networks:
-      - app-network
-
-  frontend:
-    build: ./atv-silvio-frontend
-    container_name: frontend
-    ports:
-      - "3000:3000"
-    networks:
-      - app-network
-    depends_on:
-      - backend
-
-networks:
-  app-network:
-    driver: bridge
+      - "8000:5000"
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /code
+  redis:
+    image: "redis:alpine"
