@@ -14,6 +14,7 @@ def get_hit_count():
             retries -= 1
             time.sleep(0.5)
 @app.route('/')
+# A função hello() não diz olá.
 def hello():
     count = get_hit_count()
     return 'Corinthians! I have been seen {} times.\n'.format(count)
