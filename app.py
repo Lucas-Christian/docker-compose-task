@@ -17,4 +17,4 @@ def get_hit_count():
 # A função hello() não diz olá.
 def hello():
     count = get_hit_count()
-    return 'Corinthians, o melhor time do mundo {} vezes e, quem concorda, respira.\n'.format(count)
+    return 'Corinthians, o melhor time do mundo {} vezes e, quem concorda, respira,.\n vai corinthians caramba'.format(count)
